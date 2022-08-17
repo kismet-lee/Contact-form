@@ -68,10 +68,15 @@ form .message textarea:focus {
   position: absolute;
   left: 18px;
   top: 50%;
-  transform: translateY(-50%);
   font-size: 18px;
   pointer-events: none;
   color: #23264a;
+  transform: translateY(-50%);
+}
+
+form .field input:focus ~ i,
+form .message textarea:focus ~ i {
+  color: #ff0910;
 }
 
 form .message {
@@ -89,4 +94,35 @@ form .message textarea {
   min-height: 120px;
   max-height: 300px;
   padding: 16px 24px 0 48px;
+}
+
+form .button-area {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.button-area button {
+  font-size: 18px;
+  border: none;
+  color: #fef7e5;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #ff0910;
+  padding: 16px 24px;
+}
+
+.button-area span {
+  color: #fff;
+  margin-left: 32px;
+}
+
+@media (max-width: 600px) {
+  .wrapper header {
+    text-align: center;
+  }
+
+  form .dbl-field {
+    flex-direction: column;
+  }
 }
