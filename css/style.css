@@ -124,5 +124,27 @@ form .button-area {
 
   form .dbl-field {
     flex-direction: column;
+    margin-bottom: 0;
+  }
+  .dbl-field .field {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  form .message textarea {
+    resize: none;
+  }
+
+  form .button-area {
+    flex-direction: column;
+  }
+
+  .button-area button {
+    width: 100%;
+  }
+
+  .button-area span {
+    text-align: center;
+    margin: 24px 0;
   }
 }
